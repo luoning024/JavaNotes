@@ -10,6 +10,7 @@ public class Main {
         String l = "Luo";
         String full = f +" "+ l;
         System.out.println("holy shit! my name is " + full);
+        System.out.println("I updated this at 8.53pm!!!");
 
 
 //        for (int i = 1; i <= 5; i++) {
