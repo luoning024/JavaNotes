@@ -42,7 +42,7 @@ if (a instanceof Dog) {
 
 p117: 成员变量的隐藏
 在编写子类时，如果新声明的成员变量和从父类继承来的相同，那么这种情况下子类会隐藏继承来的变量。
-例如父类有double weight，但子类新声明了int weight，这是double weight就会被隐藏，创建对象设置weight时不可以是double，只能是int。
+例如父类有double weight，但子类新声明了int weight，这时double weight就会被隐藏，创建对象设置weight时不可以是double，只能是int。
 
 
 p118: 方法重写 override
@@ -93,6 +93,8 @@ final变量：这个变量必须是常量，即必须指定值
 p126: 对象的上转型对象
 就是用父类类型的变量，指向子类对象。
 上转型对象只能访问隐藏的变量，继承的变量，继承或重写的方法。不能使用新增的变量和方法。
+多态变量：编译看左边，运行还看左边
+多态：编译看左边，运行看右边（如果右边子类有独属于自己的方法，则该对象就用不了）
 ///
 class Animal {
     void sound() {
@@ -176,6 +178,11 @@ class Cat extends Animal {
     }
 }
 ///
+
+1.抽象类不能实例化，不能有对象
+2.抽象类中不一定有抽象方法，有时抽象类作用是为了不让外界创建本类对象
+3.抽象类中可以有构造方法，目的是为了给成员变量赋值
+4.抽象类的子类必须重写父类中全部抽象方法，如果子类也是抽象类，那么允许只重写部分抽象方法，剩下的方法可以交给孙子类来重写
 
 p134: 面向抽象编程
 例如现在我需要计算柱体的体积，但是算底面积的getArea根据用户需求不一样，导致会出现三角形底或者圆形底等等。这个时候一个class pillar和class class Circle就不够了。现在需要abstract class Geometry, class Pillar, class Rectangle extends Geometry, class Circle extends Geometry。这就是面向抽象编程。

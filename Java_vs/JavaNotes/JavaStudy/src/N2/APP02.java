@@ -31,6 +31,7 @@ public class APP02 {
     }
 
     static class B extends A{
+        @Override 
         float computer(float x, float y){
             return x*y;
         }
