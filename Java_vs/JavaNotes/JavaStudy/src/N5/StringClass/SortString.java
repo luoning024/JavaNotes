@@ -1,4 +1,4 @@
-package N5.StringTest;
+package N5.StringClass;
 
 public class SortString {
     public static void sort(String a[]){

@@ -1,4 +1,4 @@
-package N5.StringTest;
+package N5.StringClass;
 
 public class String_Ex {
     public static void main(String[] args) {

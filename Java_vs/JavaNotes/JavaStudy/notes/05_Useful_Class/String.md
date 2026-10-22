@@ -84,3 +84,9 @@ String str = tom.substring(1,3)     // "喜欢"， 不是"喜欢篮"
 
 8.public String trim()
 得到一个新的对象，这个对象是当前对象去掉前后空格后的内容
+
+
+p183: 对象的字符串表示以及toString()方法
+所有 Java 类都继承了 Object 的 toString()。 如果不重写，通常显示类似Student@1a2b3c 的内容，默认形式是“类名 + @ + 哈希码的十六进制表示”，不是内存地址。
+重写的方法签名是 public String toString()：没有参数，返回字符串。
+方法内部用 return 返回描述文字，打印由外部的 println() 完成。

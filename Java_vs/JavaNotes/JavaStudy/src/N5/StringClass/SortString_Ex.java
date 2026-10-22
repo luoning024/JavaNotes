@@ -1,4 +1,4 @@
-package N5.StringTest;
+package N5.StringClass;
 import java.util.*;
 
 public class SortString_Ex {
